@@ -78,11 +78,13 @@ nav .logo img {
 }
 
 .btn2 {
+
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: white;
   background-color: rgb(229 9 20);
   padding: 5px 16px;
+  margin: 5px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -126,6 +128,7 @@ nav .logo img {
 .hero-btn input {
   padding: 14px;
   width: 390px;
+
   color: white;
   background-color: rgba(23, 23, 23, 0.7);
   border-radius: 5px;
@@ -438,7 +441,7 @@ nav .logo img {
 
 footer {
   position: relative;
-  height: 380px;
+  height: auto;
 }
 
 footer h5 {
@@ -481,5 +484,53 @@ footer h5 {
 
 .footer-end :nth-child(2){
   color: white;
+
+}
+
+
+@media screen and (max-width:1300px) {
+
+  nav{
+    max-width: 90vw;
+  }
+
+  .hero-btn{
+    flex-wrap: wrap;
+  }
+
+  .box1,.box3{
+    flex-wrap: wrap;
+  }
+
+  .box2,.box4{
+    flex-wrap: wrap-reverse;
+  }
+   .box4-text :nth-child(1){
+    font-size: 24px;
+  }
+
+  .box4-text :nth-child(2){
+    font-size: 16px;
+  }
+
+  .seperation{
+    margin: 120px 0;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer h5{
+    left: 60px;
+    font-size: 21px;
+    top: 0px;
+  }
+
+  .footer-end{
+    left: 60px;
+    top: 360px;
+  }
 
 }
